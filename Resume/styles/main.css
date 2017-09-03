@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+body {
+    min-width: 320px;
+}
+
+.img {
+    border-radius: 5px;
+}
+
+main {
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+header {
+    background-color: powderblue;
+    border-radius:25px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Trebuchet MC", sans-serif;
+}
+
+article {
+    background-color: powderblue;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+footer {
+    background-color: powderblue;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.foot {
+    text-align: center;
+}
+
+p, ul {
+    margin: 0;
+}
+
+.span {
+   text-align: center;
+    border-radius: 50px;
+    background-color: blueviolet;
+}

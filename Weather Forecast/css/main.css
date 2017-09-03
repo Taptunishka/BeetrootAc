@@ -1,0 +1,144 @@
+body {
+    font-size: 14px;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+    color: #E4F6FC;
+    background-color: #2B81AC;
+    padding: 20px;
+    height: 100vh;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+    transition: all 0.3s ease-in-out;
+}
+
+.main {
+    min-height: calc(100vh - 40px);
+    max-width: calc(100vw - 40px);
+    min-width: 355px;
+    background-color: #3399CC;
+}
+
+.container {
+    background-color: white;
+    min-height: 300px;
+    min-width: 350px;
+    height: 61vh;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2px 4px 4px 0;   
+}
+
+.title-text {
+    font-size: 30px;
+    font-family: Lucida Sans Unicode;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.footer-text {
+    font-size: 16px;
+    font-family: Lucida Sans Unicode;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.list {
+    list-style-type: none;
+    min-height: 296px;
+    height: 60vh;
+    text-align: center;
+}
+
+.city {
+    display: inline-block;
+    background-color: red;
+    height: 25%;
+    margin-right: -4px;
+    border: 2px solid #fff;
+}
+
+.text-city {
+    font-size: 18px;
+    color: #fff;
+    height: 50%;
+    padding-top: 20px;
+}
+
+.text-weather {
+    font-size: 16px;
+    color: #CEDEDE;
+    height: 50%;
+    padding-top: 5px;
+}
+
+i {
+    padding-left: 5px;
+}
+
+.lisbon {
+    width: 50%;
+    background-color: #3399CC;
+}
+
+.paris {
+    width: 25%;
+    background-color: #33CCCC;
+}
+
+.belgrad {
+    width: 25%;
+    background-color: #996699;
+}
+
+.moscow {
+    width: 25%;
+    background-color: #C24747;
+}
+
+.telaviv {
+    width: 25%;
+    background-color: #E2674A;
+}
+
+.cair {
+    width: 25%;
+    background-color: #FFCC66;
+}
+
+.newyork {
+    width: 25%;
+    background-color: #99CC99;
+}
+
+.newdelhi {
+    width: 25%;
+    background-color: #669999;
+}
+
+.sanfrancisco {
+    width: 50%;
+    background-color: #CC6699;
+}
+
+.tokyo {
+    width: 25%;
+    background-color: #339966;
+}
+
+.sydney {
+    width: 100%;
+    background-color: #666699;
+}
+
+.list:hover .city:not(:hover) {
+    opacity: 0.5;
+}
+
+.list:hover {
+    cursor: pointer;
+}

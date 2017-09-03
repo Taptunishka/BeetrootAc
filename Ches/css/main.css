@@ -1,0 +1,36 @@
+body {
+  color: blue;
+}
+
+.box-set,
+.box {
+  border-radius: 6px;
+}
+.box-set {
+  background: yellow;
+  width: 640px;
+  height: 640px;
+  display: flex;
+
+}
+.box {
+    background: black;
+    height: 80px;
+    line-height: 80px;
+    text-align: center; 
+    width: 80px;
+    margin-left: 0;
+    
+}
+
+.box-1 {
+    flex-direction: row;
+    justify-content: flex-start;
+    background: black;
+}  
+
+ .box-2 {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    background: white;
+}  
