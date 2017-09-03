@@ -1,142 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 300 16px/1.5 'Lato', Arial, sans-serif;
+  color: #3c3c3c;
+}
+
+@keyframes custom-animate {
+  0% { 
+    transform: translateY(0) translateX(-50%);
   }
-  
-  @keyframes custom-animate {
-    0% { 
-      transform: translateY(0) translateX(-50%);
-    }
-    50% {
-      transform: translateY(10px) translateX(-50%);
-    }
-    100% {
-      transform: translateY(0) translateX(-50%);
-    }
+  50% {
+    transform: translateY(10px) translateX(-50%);
   }
-  
-  .main-section {
-    background: url('./../img/hero-bg.jpg') center no-repeat;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed;
-    position: relative;
+  100% {
+    transform: translateY(0) translateX(-50%);
   }
-  
-  .main-section__btn {
-    width: 22px;
-    height: 36px;
-    border: 1px solid #fff;
-    border-radius: 11px;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .main-section__btn:hover {
-    border-color: #896c81;
-  }
-  
-  .main-section__btn:hover .main-section__btn-animate {
-    background-color: #896c81;
-  }
-  
-  .main-section__btn-animate {
-    display: inline-block;
-    width: 2px;
-    height: 7px;
-    background-color: #fff;
-    position: absolute;
-    top: 7px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all 0.3s ease-in-out;
-    animation: custom-animate 4s infinite;
-  }
-  
-  .about {
-    min-height: 100vh;
-    background-color: #fff;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .about__container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    border: 2px solid #333;
-    padding: 50px;
-    position: relative;
-  }
-  
-  .about__title {
-    font-size: 34px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    padding: 0 100px;
-    background-color: #fff;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
+}
+
+p{
+  margin: 0 0 25px;
+}
+.main-section {
+  background: url('./../img/hero-bg.jpg') center no-repeat;
+  background-color: #a9b3c8;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  position: relative;
+  font-size: 15px;
+  letter-spacing: .06em;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2;
+  margin-bottom: none;
+}
+
+.header_title {
+color: #ffffff;
+font-size: 45px ;
+letter-spacing: 0.16em;
+font-weight: 700;
+line-height: 1.3;
+margin: 0 0 35px;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+
+.main-section__btn {
+  width: 22px;
+  height: 36px;
+  border: 1px solid #fff;
+  border-radius: 11px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.main-section__btn:hover {
+  border-color: #896c81;
+}
+
+.main-section__btn:hover .main-section__btn-animate {
+  background-color: #896c81;
+}
+
+.main-section__btn-animate {
+  display: inline-block;
+  width: 2px;
+  height: 7px;
+  background-color: #fff;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  animation: custom-animate 4s infinite;
+}
+
+.about {
+  height: 635px;
+  background-color: #fff;
+  padding:160px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_text {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  padding: 70px 180px 26px;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  border-width: 0 2px 2px;
+}
+
+.bo-box::before,
+.bo-box::after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: #000;
+  width: 22%;
+  top: 0;
+}
+
+.bo-box::before {
+  left: 0;
+}
+
+.bo-box::after {
+  right: 0;
+}
+
+.box__title {
+  font-size: 34px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  padding: 0 100px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.about :last-child {
+  margin-bottom: 0;
+}
+
+  .service {
+  background: url(../img/services.jpg) center no-repeat;
+  background-size: cover;
+  background-color: #a9b3c8;
+  height: 490px;
+  width: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  position: relative;
+  color: #ffffff;
+} 
+
+.bo-box--light  {
+  border-color: #fff;
+}
+
+.bo-box--light::after,
+.bo-box--light::before {
+  background-color: #fff;
+}
+
+.portfolio {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio__item {
+  width: 25%;
+  height: 234px;
+  border-right: 9px solid #fff;
+  border-bottom: 9px solid #fff;
+  position: relative;
+}
+
+.portfolio__item:nth-of-type(3n + 3) {
+  border-right: none;
+}
+
+.portfolio__item--large {
+  width: 50%;
+}
+
+.portfolio__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio__label {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 0.16em;
+}
+
+@media (max-width: 1100px) {
   .portfolio {
-    padding: 50px 0;
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  
-  .portfolio__item {
-    width: 25%;
-    height: 234px;
-    border-right: 9px solid #fff;
-    border-bottom: 9px solid #fff;
-    position: relative;
-  }
-  
-  .portfolio__item:nth-of-type(3n + 3) {
-    border-right: none;
-  }
-  
+  .portfolio__item,
   .portfolio__item--large {
-    width: 50%;
-  }
-  
-  .portfolio__img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
-  
-  .portfolio__label {
-    position: absolute;
-    left: 30px;
-    bottom: 30px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30px;
-    letter-spacing: 0.16em;
-  }
-  
-  @media (max-width: 1100px) {
-    .portfolio {
-      flex-direction: column;
-    }
-    .portfolio__item,
-    .portfolio__item--large {
-      width: 100%;
-    }
-  }
+}
