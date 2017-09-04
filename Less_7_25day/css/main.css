@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", serif;
     /* font-family: "Roboto", sans-serif; */
     
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .first_char {
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", serif;
     font-size: 77px;
     position: absolute;
     top: 70px;
