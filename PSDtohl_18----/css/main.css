@@ -9,6 +9,7 @@
 body {
   font: 300 16px/1.5 'Lato', Arial, sans-serif;
   color: #3c3c3c;
+  min-width: 400px;
 }
 
 @keyframes custom-animate {
@@ -107,10 +108,10 @@ margin: 0 0 35px;
 }
 
 .about {
-  height: 635px;
+  min-height: 634px;
   background-color: #fff;
-  /* padding:160px 0; */
   display: flex;
+  /* margin: 80px auto; */
   align-items: center;
   justify-content: center;
 }
@@ -118,9 +119,9 @@ margin: 0 0 35px;
 .box_text {
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 50px auto;
   border: 2px solid #333;
-  padding: 70px 180px 26px;
+  padding: 5% 15%;
   text-align: center;
   position: relative;
   font-size: 16px;
@@ -146,6 +147,11 @@ margin: 0 0 35px;
   right: 0;
 }
 
+@media screen and (max-width: 650px) {
+  .box_text{
+    padding: 17% 10% 5%;
+  }
+}
 .box__title {
   font-size: 34px;
   font-weight: bold;
@@ -166,7 +172,8 @@ margin: 0 0 35px;
 background: url(../img/services.jpg) center no-repeat;
 background-size: cover;
 background-color: #a9b3c8;
-height: 490px;
+/* margin: 50px auto; */
+min-height: 490px;
 width: 100%;
 padding: 0 15px;
 display: flex;
@@ -187,7 +194,7 @@ color: #ffffff;
 }
 
 .wwdo {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fff;
   margin: 70px;
   display: flex;
@@ -246,34 +253,31 @@ color: #ffffff;
 }
 
 .contact_us {
-height: 430px;  /* height: 100vh; */
-width: 100%;
+  min-height: 330px;  
+  width: 100%;
   background-color: #fff;
   padding:160px 0;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  margin: 50px auto;
   flex-direction: row;
-
 }
 
 .btn_cont {
   height: 60px;
-  width: 395px;
-  position: absolute;
+  min-width: 250px;
   align-items: center;
   justify-content: center;
   background-color: #3c3c3c;
   color: #fff;
   text-transform: uppercase;
-  /* margin: 50px 0; */
-  transform: translateX(-50%);
   transition: all 0.3s ease-in-out;
-
+  margin: 50px auto;
   border: none;
   cursor: pointer;
+  font-size: 25px;
+  letter-spacing: 0.16em;
 }
 
 .btn_cont:hover {
