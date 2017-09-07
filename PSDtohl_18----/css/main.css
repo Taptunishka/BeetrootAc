@@ -195,16 +195,24 @@ color: #ffffff;
 
 .wwdo {
   min-height: 100vh;
-  background-color: #fff;
+  /* background-color: #E9EFF4; */
   margin: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.wwdo_logo {
+  display: inline-block;
+  margin:50px auto 30px;
 
 }
 
+.fa {
+  size: 25px;
+}
+
 .portfolio {
-  padding: 50px 0;
   display: flex;
   flex-wrap: wrap;
 }
